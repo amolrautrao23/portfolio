@@ -1,18 +1,33 @@
+import { motion } from 'framer-motion'
 import React from 'react'
 import skills from '../img/skills.svg'
 const Skills = () => {
+  const animations={
+    div:{
+      initial:{
+        opacity:0,
+      },
+      whileInView:{
+        opacity:1,
+      },
+    }
+
+  }
   return (
     <>
       <div className="skills">
         <h2 className='heading'>Skills</h2>
-        <div className="skills-inner">
-          <div className="skills-img">
-            <img src={skills} alt="img-skills" />
-          </div>
 
+        <div className="skills-inner">
+            <div className="skills-img">
+          <motion.div {...animations.div} transition={{ delay: 0.3 }}>
+              <img src={skills} alt="img-skills" />
+          </motion.div>
+            </div>
           {/* skill bars */}
           <div className="skills-right">
             <div className="skills-container">
+            <motion.div {...animations.div}transition={{delay:0.6}}>
               <div className="html">
                 <span className='skills-content-left'>HTML</span>
                 <span className='skills-content-right'>90%</span>
@@ -47,6 +62,7 @@ const Skills = () => {
                 <span className='skills-content-left'>React Native</span>
                 <span className='skills-content-right'>10%</span>
               </div> */}
+              </motion.div>
             </div>
           </div>
         </div>

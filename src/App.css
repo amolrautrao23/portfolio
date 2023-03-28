@@ -7,7 +7,7 @@
 }
 body
 {
-  overflow-x: hidden
+  overflow-x: hidden !important;
 }
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@500&family=Ubuntu:wght@300;500;700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&family=Roboto:wght@500&family=Ubuntu:wght@300;500;700&display=swap');
@@ -532,10 +532,11 @@ textarea
 {
   padding-top: 2rem;
 }
-.header
+.header,hr
 {
   display: none;
 }
+
 .nav-responsive
 {
   display: block;

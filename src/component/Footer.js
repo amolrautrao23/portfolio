@@ -1,10 +1,26 @@
 import React from 'react'
 import Navbar from './Navbar'
 import { FaLinkedinIn, FaFacebookF, FaInstagram, FaGithub } from 'react-icons/fa'
+import { motion } from 'framer-motion'
 
 const Footer = () => {
+  // animation 
+  const animations={
+    div:{
+      initial:{
+        y:"100%",
+        opacity:0,
+      },
+      whileInView:{
+        y:"0",
+        opacity:1,
+      },
+    }
+
+  }
   return (
     <>
+      <motion.div {...animations.div} >
       <div className="footer">
         <div className="nav">
           <Navbar isTop={false} />
@@ -37,6 +53,7 @@ const Footer = () => {
           </p>
         </div>
       </div>
+        </motion.div>
 
     </>
   )
