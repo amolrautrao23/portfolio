@@ -1,0 +1,83 @@
+
+  .swiper-slide {
+    text-align: center;
+  
+    /* Center slide text vertically */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* flex-wrap: wrap; */
+  }
+  .main
+  {
+    text-align: center !important;
+    padding: 0 5rem;
+  }
+
+
+
+.certi
+{
+    min-height: 350px;
+    min-width: 230px;
+    height: 22rem;
+    width: 16rem;
+    border: 2px solid #2c2c6c;
+    background:  transparent;;
+    border-radius: 5px;
+    color: #fff;
+    margin-bottom: 2rem;
+}
+.certi:hover
+{
+
+    scale: 95% 95%;
+
+}
+figure
+{
+    width: 100%;
+    text-align: center;
+}
+figure img
+{
+    text-align: center;
+    height: 5rem;
+    width: 5rem;
+    margin: 5px;
+}
+.c-body
+{
+    height: 10rem;
+}
+.c-title
+{
+font-size: 1.4rem;
+min-height: 3rem;
+padding-top: .3rem;
+color: aquamarine;
+}
+.c-body p
+{
+  /* text-align: start; */
+ padding: 0 5px;
+}
+.btn-view
+{
+    border: 1px solid #4db5ff;
+    color: #4db5ff;
+    margin-top: 15px;
+}
+.btn-view:hover
+{
+    background-color: #4db5ff;
+    color: white;
+}
+@media (max-width:480px)
+{
+.main
+  {
+    padding: 0 2rem;
+  }
+
+}

@@ -15,7 +15,7 @@ const NavResponsive = () => {
       <li onClick={()=>scroll(450)}><FaUserAlt/></li>
       <li onClick={()=>scroll(1250)}><FaCode/></li>
       <li onClick={()=>scroll(2050)}><BsFillRocketTakeoffFill/></li>
-      <li onClick={()=>scroll(3050)}><BsFillTelephoneOutboundFill/></li>
+      <li onClick={()=>scroll(3550)}><BsFillTelephoneOutboundFill/></li>
       </ul>
       </div>
     </>

@@ -1,18 +1,18 @@
 import React from 'react'
 
 const Navbar = ({isTop}) => {
-    const scroll=(x,y)=>{
+    const scroll=(y)=>{
 
-        window.scrollTo(x,y);
+        window.scrollTo(0,y);
     }
     return (
         <>
             <ul className={isTop?'nav-top':"nav-bottom"}>
                 <li onClick={()=>scroll(0,0)}>Home</li>
-                <li onClick={()=>scroll(100,400)}>About Me</li>
-                <li onClick={()=>scroll(100,950)}>Skills</li>
-                <li onClick={()=>scroll(100,1400)}>Projects</li>
-                <li onClick={()=>scroll(100,2050)}>Contact Me</li>
+                <li onClick={()=>scroll(400)}>About Me</li>
+                <li onClick={()=>scroll(950)}>Skills</li>
+                <li onClick={()=>scroll(1480)}>Projects</li>
+                <li onClick={()=>scroll(2520)}>Contact Me</li>
             </ul>
         </>
     )

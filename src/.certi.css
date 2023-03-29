@@ -1,0 +1,19 @@
+.certi
+{
+    height: 20rem;
+    width: 15rem;
+    background: #a17c7c;
+    border-radius: 5px;
+}
+figure
+{
+    width: 100%;
+    text-align: center;
+}
+figure img
+{
+    text-align: center;
+    height: 10rem;
+    width: 10rem;
+    margin: 5px;
+}
